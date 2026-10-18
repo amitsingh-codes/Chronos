@@ -5,10 +5,8 @@ Chronos is an AI-powered workspace designed to help teachers spend less time on 
 > **Project status:** Academic / prototype project. AI-generated assessments and grading are provisional and should be reviewed by a teacher before being used for official decisions.
 
 ## Demo Video
-<video width="640" height="360" controls>
-    <source src="./chronos-backend/github-readme/chronos-video.mp4"
-            type="video/mp4">
-</video>
+
+[▶ Watch the Chronos Demo](./github-readme/chronos-video.mp4)
 
 ## Features
 
