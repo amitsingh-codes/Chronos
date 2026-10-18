@@ -4,22 +4,11 @@ Chronos is an AI-powered workspace designed to help teachers spend less time on 
 
 > **Project status:** Academic / prototype project. AI-generated assessments and grading are provisional and should be reviewed by a teacher before being used for official decisions.
 
-## Demo video
-
-Add the path or URL to your demo video below.
-
-<!-- Replace the placeholder with a relative path (recommended) or a hosted video URL. -->
-**Video:** `PATH_TO_YOUR_VIDEO`
-
-For a video stored in this repository, you could use a path such as `assets/chronos-demo.mp4`. Create the `assets/` folder and put your video there, or replace the placeholder with a shareable URL.
-
-GitHub Markdown does not reliably play an MP4 inline. To link to a video in the repository, use:
-
-```markdown
-[Watch the Chronos demo](assets/chronos-demo.mp4)
-```
-
-If the video is hosted online, replace the link with its URL.
+## Demo Video
+<video width="640" height="360" controls>
+    <source src="./chronos-backend/github-readme/chronos-video.mp4"
+            type="video/mp4">
+</video>
 
 ## Features
 
@@ -34,14 +23,31 @@ If the video is hosted online, replace the link with its URL.
 Feature availability depends on backend configuration and the services installed on the machine.
 
 ## Screenshots
+### Workspace
 
-Screenshots of the current interface can be added here. Store them in a folder such as `assets/screenshots/` and link them with relative paths:
+<p align="center">
+  <img src="chronos-backend\github-readme\chronos-img1.jpeg" alt="Chronos Dashboard" width="800">
+</p>
 
-```markdown
-![Ask your material](assets/screenshots/ask-your-material.png)
-![Question Studio](assets/screenshots/question-studio.png)
-![Answer evaluation](assets/screenshots/answer-evaluation.png)
-```
+### Interface 
+
+<p align="center">
+  <img src="chronos-backend\github-readme\chronos-img2.jpeg" alt="Question Studio" width="800">
+</p>
+
+<p align="center">
+  <img src="chronos-backend\github-readme\chronos-img3.jpeg" alt="Answer Evaluation" width="800">
+</p>
+
+### Solutions
+
+<p align="center">
+  <img src="chronos-backend\github-readme\chronos-img4.jpeg" alt="Document Similarity" width="800">
+</p>
+
+<p align="center">
+  <img src="chronos-backend\github-readme\chronos-img2.jpeg" alt="Chronos Screenshot" width="800">
+</p>
 
 ## Tech stack
 
@@ -53,8 +59,6 @@ Based on the current project setup:
 - **Retrieval / embeddings:** Sentence Transformers (`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` as shown in the health response).
 - **PDF processing:** PDF text extraction and page rendering; OCR via Tesseract when installed and configured.
 - **API documentation:** FastAPI's interactive Swagger UI.
-
-> Update this section if your repository uses different libraries or services. Do not add technologies that are not actually used by the project.
 
 ## Architecture overview
 
@@ -81,7 +85,7 @@ Based on the current project setup:
 Open a terminal in the backend project directory. In the current local setup, the backend folder was:
 
 ```powershell
-cd "C:\Users\amitw\Downloads\scorematrix-backend-everthing\scorematrix-backend"
+cd "C:\scorematrix-backend"
 ```
 
 Create a virtual environment if one does not already exist:
@@ -236,6 +240,10 @@ Adjust this example to match the actual repository layout.
 3. Test relevant workflows through the frontend and Swagger UI.
 4. Never commit API keys, credentials, or private student documents.
 
-## License
 
-Add the license used by your project here. If no license has been chosen, do not imply that the project is open source under a particular license.
+TEAM CHRONOS
+
+<h1>Amit singh <br>
+Gurransh <br>
+Harshit sharma <br>
+Salman </h1>
