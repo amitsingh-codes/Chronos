@@ -82,7 +82,7 @@ Based on the current project setup:
 Open a terminal in the backend project directory. In the current local setup, the backend folder was:
 
 ```powershell
-cd "C:\scorematrix-backend"
+cd "C:\chronos-backend"
 ```
 
 Create a virtual environment if one does not already exist:
@@ -103,7 +103,7 @@ Install the project's dependencies using its provided requirements file (use the
 pip install -r requirements.txt
 ```
 
-Create or update the `.env` file using the project's environment-variable template. At minimum, configure a valid Gemini API key and model. **Never commit your real API key to Git.**
+Create or update the `.env` file using the project's environment-variable template. At minimum, configure a valid Gemini API key and model. 
 
 Example configuration (adjust to the backend's actual settings):
 
@@ -150,9 +150,7 @@ If `npm run dev` uses another port, use the URL printed in the terminal and add 
 
 ### Ask your material
 
-1. Upload a supported PDF or text document.
-2. Enter a question about the material.
-3. Choose the number of passages to retrieve.
+1. Upload a supported PDF or text.
 4. Run the workflow.
 5. Review the answer and citations against the original document.
 
@@ -160,7 +158,9 @@ If `npm run dev` uses another port, use the URL printed in the terminal and add 
 
 1. Provide source text or upload a supported source document, depending on the form's available input.
 2. Choose the number of questions and difficulty.
-3. Select one or more question types.
+3. Select one or more question types. document.
+2. Enter a question about the material.
+3. Choose the number of passages to retrieve
 4. Optionally set total marks, subject, and additional instructions.
 5. Generate the questions and review each answer and its supporting evidence.
 
