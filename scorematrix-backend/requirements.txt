@@ -1,0 +1,24 @@
+# ScoreMatrix backend - runtime dependencies (Python 3.12+)
+# Lower bounds are the versions this code was tested against; upper bounds stop silent major upgrades.
+
+fastapi>=0.143,<1
+uvicorn[standard]>=0.54,<1
+pydantic>=2.14,<3
+pydantic-settings>=2.16,<3
+python-multipart>=0.0.32,<1
+
+# Gemini (maintained google-genai SDK; the legacy google-generativeai package is NOT used)
+google-genai>=2.31,<3
+
+# PDF: pypdf = text extraction (BSD), pypdfium2 = page rendering for OCR, cryptography = AES-encrypted PDF detection
+pypdf>=6.21,<7
+pypdfium2>=5.14,<6
+cryptography>=50,<52
+Pillow>=13,<14
+
+# OCR: needs the Tesseract *program* installed separately (see README)
+pytesseract>=0.3.13,<0.4
+
+# Embeddings (RAG + semantic plagiarism). Pulls in PyTorch (large download).
+numpy>=2.5,<3
+sentence-transformers>=3.0,<7

@@ -1,0 +1,7 @@
+-r requirements.txt
+
+pytest>=9.1,<10
+pytest-asyncio>=1.4,<2
+httpx>=0.28,<1
+# Only used to build test/sample PDFs (tests/pdf_factory.py, scripts/make_sample_pdfs.py)
+reportlab>=5.0,<6
